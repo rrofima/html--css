@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(214, 233, 255);
+        }
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+        color: rgb(0, 0, 0); 
+        display: block;
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passa o mouse aqui safado
+        <p>MEU GELO JÁ TÁ PIK EMULADO TLG</p>
+    </div>
+    <ul>
+        <li>display none : serve para ocultar um termo</li>
+        <li>display block : usado para aparecer o termo ocultado pela tag <q>display none</q></li>
+        <li>> : usado para indicar algo que sobrepõe</li>
+        <p>ou seja, para ocultar um termo e fazer ele aparecer quando se passa o cursor em cima do texto selecionado como principal, fazemos:</p>  <br>
+        div> texto principal div> <br>
+        p> texto escondido p> <br> <br>
+
+       <br> style> <br><br> div > p { <br>
+        display : none <br>
+       } <br>
+       <br>
+       div : hover > p { <br>
+       display : block <br>
+       } <br>
+       
+       <a href="index.html">págna principal</a> <br>
+       <a href="links.html">links</a>
+
+    
+</body>
+</html>

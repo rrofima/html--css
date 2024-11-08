@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1</title>
+    <link rel="stylesheet" href="estiloresumo.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body> <h1 style="color: rgb(33, 0, 199);">Aprendizados na prática de HTM CSS!!</h1>
+    <h1>Olá, Mundo! <br> <h2>O primeiro código</h2></h1>
+<p>Temos o primeiro contato com o código base HTML, que é a tag <q> ! </q> e uma introdução sobre ele</p> <hr>
+<h1>Parágrafos e quebras</h1>
+<ul>
+
+    <li>tag h1 - h6: Usada para títulos</li>
+    <li>tag p: Usada para dar início a um parágrafos</li> 
+    <li>tag hr: Usadar para deixar uma linha horizontal dentro do site</li>
+
+    <li>tag &.gt e &.gt: Usada para acrescentar semanticamente o símbolo <q> < e > (gt: grather than e lt: less than)</li> 
+        </ul><hr>
+
+        <h1>Adicionando emojis e comentários</h1>
+        <p>Para adionarmos um emoji dentro do nosso código, devemos ultilizar o código fonte de um emoji dentro ta tag <q> &#x </q> + o código do emoji, exemplo: <br>
+        <p>&#x1F602  (&#x 1F602)</p>
+        <p>E para adicionar um comentaário dentro do código, que não fique visível no site, usamos a tag <q> < ! - -  </q>, porém, tudo junto, assim ficará uma escrita verde dentro do própio código
+            <!-- Vou fazer um resumo completo de todos o módulos das aulas de HTML CSS do professor Gustavo Guanabara-->
+             <hr>
+        <h1>Imagens dentro dos sites</h1>
+        <p>De início temos uma breve citação sobre os direitos autorais e como fazer para não ter probleamas com isso,logo temos sobre os tipos de imagens (JPEG, PNG, OGG) e como cada uma delas pode comportar dentro de um site, sendo uma vantagem ou uma desvantagem, depois é falado sobre os tamanhos de imagens e de como eles podem influenciar no resultado e visualização de seu site</p>
+        <p>Para adiocionar uma uma imagem dentro de um site, primeiramente devemos ter elas em uma pasta no mesmo lugar onde fica o index.html, para assim termos um atalho direto da pasta dentro do VST (Virtual Studio Code), logo usamos a tag <q>img</q> para adicionar o comando para selecionar uma image, dentro da subtag src, apertamos CTRL + spacebar para colocar noosa imagem dentro do site, e na subtag alt, é para dar título a imagem, sendo assim
+        <p>Nos é apresentado também a ferramente de edição de imagem GIMP, bastante utilizada por muitos progamadores para alterar coisas da imagem, como tamanho, resolução e até mesmo editar a imagem</p>
+        <ul>
+            <li>tag img:</li>
+        </ul>
+        <p><img src="imagens/Imagemprogramacao - Copia.jpg" alt="Imagem alterada no GIMP"> imagem alterada no GIMP</p>
+        <p><img src="imagens/Imagemprogramacao.jpg" alt="imagem nao alterada no GIMP"> Imagem nao alterada no GIMP</p>
+        <p>E para mudar o favicon, aquele ícone que fica na aba do site, selecionos uma imagem .ico, ou podemos transformar qualquer imagens em algum site que transforma fotos em .ico, usamos a tag <q>link: favicon</q> e adiconamos a imagem que tem que estar na pasta do index.html</p> <hr>
+        <h1>Hierarquia de títulos</h1>
+        <ul>
+            <li><h1>Hoffman h1</h1></li>
+            <li><h2>Hoffman h2</h2></li>
+            <li><h3>Hoffman h3</h3></li>
+            <li><h4>Hoffman h4</h4></li>
+            <li><h5>Hoffman h5</h5></li>
+            <li><h6>Hoffman h6</h6></li>
+        </ul> <hr>
+        <h1>Formatações de textos</h1>
+        <ul>
+            <li>tag b : Negrito (não semantico) <b>Hoffman</b></li>
+            <li>tag strong : Negrito (semantico) <strong>Hoffman</strong></li> <br>
+            <li>tag i : Itálico (não semantico) <i>Hoffman</i></li>
+            <li>tag em : Itálico (semantico) <em>Hoffman</em></li> <br><li>tag mark : texto marcado <mark>Hoffman</mark></li> <li>tag mark + : texto marcado (cor a escolha) <mark style="background-color: chartreuse;">Hoffman</mark></li> <br>
+            <li>tag big (obsoleta): texto maior <big>Hoffman</big></li> <li>tag small : texto pequeno <small>Hoffman</small></li> <br>
+            <li>tag ins : texto inserido (semantico)<ins>Hoffman</ins></li>
+            <li>tag u : texto inserido (não semantico) <u>Hoffman</u></li>
+            <li>tag del : texto excluído, riscado no meio <del>Hoffman</del></li> <br>
+            <li>tag sub : texto escrito em baixo Hiago<sub>Hoffman</sub></li>
+            <li>tag sup : texto escrito em cima Hiago<sup>Hoffman</sup></li> <br>
+            <li>tag code : usada para monoespaçar e facilitar a leitura do texto Hoffman // <code>Hoffman</code></li> <br><li>tag pre : usada para fazer o endertamento dos códigos</li> <br>
+            <li>tag q : usada para deixar o texto entre aspas <q>Hoffman</q></li> <br>
+            <li>tag blockquote : usada em citações com espacamento <blockquote>Hoffman</blockquote></li> <br>
+            <li>tag abbr : pode ser usada como um significado para abreviações,  mostra um texto abaixo quando passa o cursor por cima do texto marcado <abbr title="Hoffman">Hiago</abbr></li> <br>
+            <li>tag bdo:l : usada para inverter um texto da esquerda para a direita <bdo dir="ltr">Hoffman</bdo></li><li>tag bdo:r : usada para inverter um texto da direita para a esquerda <bdo dir="rtl">Hoffman</bdo></li> <br> <hr>
+        <h1>Listas em HTML</h1>
+        <ul>
+            <li type="square">tag ol : usado para criar uma lista ordenada</li>
+            <ol>
+                <li>comer</li>
+                <li>dormir</li>
+                <li>acordar</li>
+            </ol>
+            <p>tag ol + type + start : podemos escolher qual será o numero inicial da lista</p>
+        </ul> <br>
+        <ul>
+            <li type="square">tag ul : usada para criar uma lista não ordenada</li>
+            
+        </ul>
+        <ul>
+            <li>comer</li>
+            <li>dormir</li>
+            <li>acordar</li> <br>
+        <ul>
+            <li>tag dt : serve em conjunto com a tag dd, usada para criar uma lista de defininição</dt>
+            <dt>Hiago
+               <dd>Hoffman</dd> 
+            </dt></li>
+        </ul> <hr>
+        <h1>Links</h1>
+    <ul>
+        <li>tag a : usada para criar links</li>
+        <ul>
+            <li>subtag target=_blank : usada para criar uma nova janela dentro do navegador</li>
+            <li>subtag rel="external" : usada para direcionar o usuário para uma nova aba</li>
+            <li>subtag rel="next" : usada quando é adicionando links externos</li>
+            <li>subtag download + type="application/*extensão do arquivo"</li>
+            <li>subtag target=_self : usada quando o alvo do link for dentro do própio site</li>
+            <li>subtag rel="prev" : usad para retornar a página anterior dentro do própio site</li>
+            <li>sub tag ../ : usada para retornar a página anterior (inserida antes da pasta do link)</li>
+            <li>subtag real="nofollow"  usada para links não confiáveis ou onde não deseja dar seu aval</li>
+        </ul>
+        <p><a href="https://www.hoyolab.com/accountCenter/postList?id=167077186">meu perfel HoyoLab</a>  tag <q> a </q> sozinha</p>
+        <a href="https://www.hoyolab.com/accountCenter/postList?id=167077186" target="_blank" rel="next">meu perfil HoyoLab</a> tag <q> a  + target=_blank + rel "next" </q> ( link com uma nova aba no navegador)
+    </ul>
+    <p>podemos também criar uma pasta index dentro dentro da pasta do index principal e assim criarmos um novo site</p> <br> <hr>
+    <h1>Imagens dinamicas</h1>
+    <ul>
+        <li>tag picture : acompanhada da subtag source media="(max-width)" srcset="tamanho da imagem em px" type="image/formato da imagem" type, utilizada para adicionar uma imagem com certas coisas a mais</li> <br>
+    </ul>
+    <picture><source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexível">
+    </picture>
+    <ul>
+        <li>subtag source  : usada para incluir configurações dentro do código da imagem</li>
+        <li>subtag max-width : usada para definir o tamanho da 
+            imagem</li>
+            <li>subtag srcset : usada para escolher a imagem</li>
+        <li>subtag alt : imagem flexível</li>
+        <li>subtag type : usada para informar o formato da imagem</li>   
+    </ul> <br>
+    <h3>Para fazer com que a imagem se torne flexível, devemos criar um código em ordem crescente, ou seja, o menor em cima e o maior em baixo</h3> <br> <hr>
+    <h1>Áudio em HTML</h1>
+    <ul>
+        <li>tag audio : tem a função de adicionar um áudio dentro do site</li>
+        <li>tag controls : usada para adicionar um controle para p aúdio</li>
+        <ul>tag preload  : usadapara definir o compotamento do áudio dentro do site
+            <li type="circle">auto : baixa todo o áudio simuktaneamente com o site</li>
+            <li type="circle">metadada : baixa apenas as informações básicas do áudio, nome, tamanho ect</li></li>
+            <li type="circle">none : só vai baixar as informaçõesdo áudio quando o usuário apertar  o play no áudio</li>
+        </ul> <br>
+        <audio src="audio/seqso.mp3.mp3" controls></audio> <hr><br>
+        <h1>Vídep em HTML</h1>
+        <ul>
+            <li>tag video : usada para adiacionar um vídeo ao site</li>
+            <ul>
+                <li type="circle">subtag width : usada para mudar o tamanho do vídeo</li>
+                <li type="circle">subtag controls : usada para adicionar um controle de vídeo</li>
+                <li type="circle"> subtag poster : usada para adicionar uma tumbnail no vídeo</li>
+                <li type="circle">subtag loop : usapa para deixar o vídeo em looping</li>
+                <li type="circle">subtag heigth : largura do vídeo</li>
+            </ul>
+            <p>podemos também incorporar o link de algum vídeo e adicionar no código</p>
+            <video src="exercicios/videos/midia/videolegelhb.mp4.mp4" width="300px" controls></video>
+            <iframe width="300px" height="315" src="https://www.youtube.com/embed/XigCm63tAgg?si=FRib8761LQJR-Jdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> <hr>
+            <h1>CSS inline</h1>
+            <ul>
+                <li>style="background-color" : Usada para mudara a cor do fundo do site</li>
+                <li>style="color" : Usada para mudar a cor da letra de determinada linha de código</li>
+                <li> style font-family: : Usada para determinar a finte da letra em determinada linha do código</li>
+                <li>style font-size : Usada para mudar o tamanho da leta em determinada linha de código</li>
+                <li>style text-align: justify; : Usada para deixar o texto alinhados e sem endentamento</li>
+                <li>{ } : usada para introduzir um CSS</li> <hr> </ul>
+                <H4>IMPORTANTE: esse método é reecomendado apenas em casos isolados em um cógidos, onde não será necessário ficar rreplicando o mesmo o código!
+       
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(171, 171, 171)
+        }
+        header{
+            background-color: rgb(124, 124, 124);
+            padding: 25px;
+            margin: 10px;
+        }
+        main{
+            background-color:rgb(124, 124, 124);
+            margin: 10px;
+            border-radius: 20px;
+        }
+        article{
+            background-color: rgb(123, 123, 123);
+            text-align: center;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgba(154, 154, 154, 0.83);
+        }
+        footer{
+            background-color: rgb(118, 118, 118);
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(116, 116, 116);
+            box-shadow: 6px 7px 7px 2px rgb(0 0 0 / 17%);
+        }
+        nav > a{
+            color: rgb(2, 2, 2);
+            margin-right: 30px;
+            text-decoration: none; 
+        }
+        section > article{
+            border-radius: 5px;
+            
+        }
+        #noticias{
+            border-radius: 10px 30px;
+        }
+        #noticias > article > h2{
+            background-color: red;
+        }
+        #noticias > article > p{
+            background-color: orange;
+            padding: 10px;
+            margin: 10px;
+        }
+        #bola{
+            height: 70px;
+            width: 70px;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+                <article id="dois">
+                    <h2>Lorem e Casca de Bala</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam, minus aspernatur voluptatum qui ab enim similique dolore, magni, harum quis quaerat. Corrupti odio adipisci eos esse, sapiente nihil accusantium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus excepturi minima, harum officiis cupiditate iusto fuga rerum obcaecati! Iure labore fuga eligendi cupiditate ad obcaecati ea exercitationem id amet magnam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga cumque nisi praesentium harum, consequuntur corrupti quibusdam sapiente, reiciendis adipisci debitis laudantium sequi qui dignissimos doloremque? Eos itaque perspiciatis fugiat aliquam.</p>
+                </article>
+        </section>
+    </main>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Lorem na quebrada</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus vel explicabo, id nemo sequi, aperiam officiis, at repellat harum ad maxime eveniet. Tempore numquam laboriosam, amet exercitationem labore voluptas?</p>
+                <aside>
+                    escrito pelo pai do lorem
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo mano Hoffman</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

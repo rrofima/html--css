@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<h1>Inserindo vídeos hospeddos localmente</h1>
+<body>
+    <p>Este vídeo está hospedsado no meu própio servidor</p>
+    <h5>Vídeo teste original</h5>
+    <video src="midia/videolegal.mp4.mp4"  width="500px" controls><src="></video></video>
+    <p>Usamo a tag <q>width</q> para sugerir o tamanho da imagem dentro do navegador e a tag <q>controls</q> para ter a oppção do play no arquivo</p>
+    <h5>Vídeo teste compactado no HandBrake</h5>
+    <video src="midia/videolegelhb.mp4.mp4" width="500" controls></video> <hr>
+    <h5>Vídeo teste OGV</h5>
+    <video src="midia/videolegal.ogv.ogv" width="500" controls></video> <hr>
+    <h5>Vídeo teste webm</h5>
+    <video src="midia/videolegal.webm.webm" width="500" controls></video><hr>
+
+    <h2>Solução para abrir o arquivo independente do navegador</h2>
+
+    <video controls width="500" poster="imagens/turbina eolicadigimp.jpg" loop>
+        <source src="midia/videolegal.webm.webm" type="video/webm">
+        <source src="midia/videolegelhb.mp4.mp4" type="video/mp4">
+        <source src="midia/videolegal.mp4.mp4" type="video/mp4">
+        <source src="midia/videolegal.ogv.ogv" type="video/ogv">
+        <p>Infelizmente, seu navegador não é compatível com o tipo de extensão do vídeo</p>
+    </video>
+    <p>E para adicionar uma capa em um vídeo, utilizamos a tag <q>poster</q> e adicionamos a imagem sugerida para a capa</p>
+    <p>usamos a tag <q>loop</q> para fazer com o video comece automaticamente apos terminar de reproduzir</p>
+    <hr>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQYL8P3a_K0?si=le5EEebbWocA_i6y&amp;start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <p>Vídeo vimeo.com</p>
+    <iframe src="https://player.vimeo.com/video/290188904?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation demo reel"></iframe>
+
+</body>
+</html>

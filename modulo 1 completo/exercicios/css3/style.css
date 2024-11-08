@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+      body {
+        background-color: darkslategray;
+        font-family: initial;
+        font-size: 20px;
+      }
+      h1 {
+        background-color: blue;
+        color: indigo;
+      }
+      h2 {
+        background-color: aqua;
+        color: green;
+      }
+      p {
+        text-align: justify;
+      }
+      h4 {
+        color: floralwhite;
+      }
+      

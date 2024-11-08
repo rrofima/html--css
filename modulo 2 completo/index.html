@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <header>
+        <h1>Módulo dois: resumo</h1>
+        <p>Um resumo de todas as aulas do módulo dois</p>
+    </header>
+
+    <nav>
+        <a href="https://www.tiktok.com/@rrofima" class="tiktok">TikTok</a>
+        
+        <a href="https://www.youtube.com/" class="youtube">YouTube</a>
+
+        <a href="https://www.hoyolab.com/accountCenter/postList?id=167077186" class="hoyolab">HoyoLab</a>
+    </nav> 
+
+    <main>
+        <h1>Cores</h1>
+        <h2>Circulo cromático</h2>
+
+        <picture class="circulo">
+            <source media="(max-width: 600px)" srcset="imagensresumo/circulocromaticopqn.jpg">
+
+            <img src="exercicios/circulo cromatico/circulo crommatico paint.png" alt="circulo cromatico">
+        </picture>  
+
+        <ul>
+            <li>Cores complementáres : São cores que mais tem contraste entre sim, as que são opostas uma da outra</li>
+            <li>Cores análogas : São as cores que são mais similares entre, cores que estão a esquerda e a direita uma da outra</li>
+            <li>Cor análoga com uma complementar : São cores que além de serem análogas uma a outra, também tem  uma cor complementar, além de pegar uma cor que está do lado da cor principal, também trasçamos uma linha reta na cor principal para a cor oposta da paleta</li>
+            <li>Cores análogas relacionadas : São cores : pegamos uma cor principal, adiciocionamps uma cor a esquerda ou a direita da paleta e logo pulamos uma cor, pegando assim a quarta cor da <q>seta</q></li>
+            <li>Cores intercaladas : Escolhemos uma cor principal, pulamos uma casa e escolhemos a próximar, depois pulamos outra casa e pulamos outra casa para escolher a próxima cor</li>
+            <li>Cores triádicas : Escolhemos uma tres cores e pulamos duas casas entre elas</li>
+            <li>Cores quadadas : Escolhemos quatro cores e pulamos duas casas emtre elas</li>
+            <li>Cores tetrádicas : Escolhemos duas cores e pegamos o extremo oposto de cada cor escolhida, assim abtendo quatro cores</li>
+            <li>Monocria : Pegamos uma única cor e modificamos a saturação e o brilho dessa cor, assim gerando uma cor monocromática, criando assim um degrade da cor</li>
+        </ul> <br>
+    
+        <h2>Cores em CSS</h2>
+        <ul>
+            <li>Padrão: modo padrão de cores</li> <br>
+            <li>código hex : código haxadecimal, com 16 caractéres que vão de 0 a f ( 0 1 2 3 4 5 6 7 8 9 a b c d e f), exemplo: 00ff00, usadas como um mapa para o RGB</li> <br>
+            <li>rgb : parecido com a técnica do código hex, onde os dois primeiros números é o vermelho, a <q>quantidade, os dois segundos é o verde e os dois últimos é o azul (RBG - red,green, blue)</q></li> <br>
+            <li>hsl : características das cores , matiz ou tonalidade, saturação e brilho (HSL - hue, saturation, lightness ou luminosity)</li> </ul>
+        <h3>É possível mudar entre rgb, hsl e hex dentro do mapa de cores do própio código, basta clicar na aba em cima do quadro do cores que será trocado o modo de visualização de cores, e entre o quadro de cores e a barra de cores, podemos ajustar a transparencia da cor, é um valor adicional dentro do código da cor, ele é chamado de Alpha ( a ) e varia de um valor entre 0 e 1</h3>
+        </ul></p>
+
+        <h2>ColorZilla</h2>
+        <p>ColorZilla é uma extensão usada para detectar uma cor em um site qualquer</p>
+    </main>
+
+    <main class="gradiente">
+        <h2>Cores em gradiente</h2>
+
+       <p>background-image (<strong>linear, radial, deg (graus)</strong>) (direção do gradiente <strong> top, bottom, left. right e a cor)</strong> <br>
+       pode-se adiconar quantas cores quiser dentro de um gradiente</p>
+
+            <li>to left : gradiente da esquerda para a direita</li>
+            <li>to right : gradiente da direita para a esquerda</li>
+            <li>background-image : usado para adicionar o fundo do site em gradiente</li>
+            <li>style height : usado para definir a proporção do gradiente dentro do site</li>
+            <li>radial-gradient : usado para definir a forma do gradiente dentro dentro do site</li>
+            <li>podemos acrescentar o tamanho do gradiente colocando a porcentagem que a determinada cor pode ficar dentro do site</li>
+        </ul>
+    </main>
+
+    <main>
+        <h1>Tipografia</h1>
+
+        <ul>
+            <li>Arial : fonte padrão</li>
+            <li>Courier new : fonte sem serifa e monoespaçada</li>
+            <li>Verdana : fonte sem serifa</li>
+            <li>Helvetica : fonte sem serifa</li>
+            <li>san-serif : fonte aleatória sem serifa</li>
+            <li>monospace : fonte aleatória monoespaçada</li>
+            <li>cursive : fonte em letra cursiva</li>
+        </ul>
+    
+        <p>Algumas tipografias não tem disponíveis em certos dispositivos, pode ser que enquanto uns dispositivos tem, outros não pode ter, por isso o própio código sugere outros tipos de tipografia, para que, se o navegador não ser uma, ele pode procurar pela </p>
+        <br>
+        <p><strong>Medidas absolutas do font-size</strong> </p>
+        <ul>
+            <li>cm : centímetro</li>
+            <li>mm : milímetro</li>
+            <li>in : polegada (2,54cm)</li>
+            <li>px : pixel (1 em)</li> 
+            <li>pt : ponto</li>
+            <li>pc : paica</li>
+        </ul>
+        <br>
+        <p><strong>Medidas relativas do font-size</strong></p>
+         <ul>
+            <li>em : medida relativa ao tamanho do M maiúsculo de uma fonte (16 pixels) (recomendada)</li>
+            <li>ex : medida relativa a altura  x de uma fonte</li>
+            <li>rem : relativa ao tamanho da fonte configurada no body do código</li>
+            <li>vw (view width) : tamanho relativo a largura da tela</li> 
+         </ul>
+         <p>O tamanho padrão é 16px</p>
+         <ul>
+            <li>font-weigth : peso, define a espessura da letra</li>
+            <ul>
+                <li>ligther : pequeno</li>
+                <li>normal : tamanho normal</li>
+                <li>bold : grande</li>
+                <li>bolder : muito grande</li>
+                <li>100-900 (da largura mínima a largura máxima)(400 padrão)</li>
+            </ul> <br>
+            <li>width : largura</li><br>
+            <li>heigth : altura</li><br>
+         </ul>
+         <br>
+         <p><strong>Shorthand</strong></p>
+         <ul>
+            <li>font-family : fonte da letra</li>
+            <li>font-weight : espessura da letra</li>
+            <li>font-size : tamanho da fonte</li>
+            <li>font-style : carcterística da fonte</li>
+        </ul>
+        <p>para criar uma tag com shorthand, usamos as funções das respectivas tags a cima e nessa exata ordem, assim; font: italic bolder 3em 'work Sans', sans-serif</p>
+        <h2>Fontes externas</h2>
+        <p>tag @font-face : adiciona uma fonte externa, instalada de fora</p>
+        <ul>Tipos de format
+            <li>opentype - otf</li>
+            <li>truetype - ttf</li>
+            <li>embedded  - opentype</li>
+            <li>truetype (Apple Advanced Typography)</li>
+            <li>svg</li>
+        </ul>
+        <h2>Fontes copiadas de outras imagens</h2>
+        <p>podemos usar ferramentas de busca para desbobrir qual é a determinada fonte que está em uma imagem, onde uma extensão não é capaz de detectar, para isso, temos estes sites:</p>
+        <ul>
+            <li>whatfonis.com</li>
+            <li>fontsquirrel.com</li>
+            <li>myfonts.com</li>
+        </ul>
+
+        <h2>Fontface e Import</h2>
+        <p>Usamos a regra <strong>@fontface</strong> dentro do bloco de estilo para adcionar uma fonte que foi instalada e que está dentro da pasta de arquivos, e a regra <strong>@import</strong> para adiconar fontes de um site externo</p>
+
+        <h2>Fonts Ninja</h2>
+        <p>Fonts Ninja é uma extensão que fica instalada dentro do própio dispositivo  e é utilizada para detectar alguma fonte de um site qualquer</p>
+    </main>
+
+    <main class="hover">
+        <h1>Pseudo-classes</h1>
+
+            <p># id : usado para uma marcação única</p> 
+            <p> .  class : usado para várias marcaçõess</p>
+            <p>:  pseudo-class : usado para intecões dentro do intem selecionado, como clicar e o item mudar de cor</p>
+            <p>::  pseudo-element : usado para adiconar algo dentro de um item que esteja dentro da tag class</p>
+            <p>>  children : usado para alguma interaçao cujo tenha o sentido de sobrepor</p>
+
+        <h2>Hover</h2>
+
+            <p>Usamos <strong>:hover</strong> logo após uma pseudoclasse para criarmos uma especie de balao interativo</p>
+
+        <h2>Hover box</h2>
+
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passa o mouse aqui safado
+        <p class="hoverbox">MEU GELO JÁ TÁ PIK EMULADO TLG</p>
+    </div>
+    <ul>
+        <li>display none : serve para ocultar um termo</li>
+        <li>display block : usado para aparecer o termo ocultado pela tag <q>display none</q></li>
+        <li>> : usado para indicar algo que sobrepõe</li>
+        <p>ou seja, para ocultar um termo e fazer ele aparecer quando se passa o cursor em cima do texto selecionado como principal, fazemos:</p>  <br>
+        div> texto principal div> <br>
+        p> texto escondido p> <br> <br>
+
+       <br> style> <br><br> div > p { <br>
+        display : none <br>
+       } <br>
+       <br>
+       div : hover > p { <br>
+       display : block <br>
+       } <br>
+
+    </main>
+
+    <main>
+        <h1>Box-level</h1>
+        <h1 class="box">caixa</h1>
+    <p>Parágrafos também são exemplos de box-levels, mas os <a href="#" class="link"> links </a>são exemplos de caixas inline-level</p>
+    <p>ao usar a sequencia de teclas <strong>CTRL + SHIFT + I</strong>, abrimos s jsnrls do dev tools, procuramos a aba de elementos para visualizar as características de css <br>
+    == o termo user agent stylesheet (folha de estilo do agente de usuário) é o própio navegador em si
+    </p>
+    <ul><strong>Opcões para borda</strong>
+        <li>dashed : listrado</li>
+        <li>doted : pontilhado</li>
+        <li>solid : linha comum</li>
+        <li>doble : dupla</li>
+        <li>grove : uma margem quase que 3d</li>
+    </ul>
+<h2> paddind e tags características</h2>
+     <p>É recomendado fazer o padding em sentido horário, cima, direita, baixo, esquerda, não só o padding, como toda shorthand que for criada, deve seguir uma certa ordem no seus elementos</p>
+<ul>
+    <li>display inline : inline level</li>
+    <li>display block : box level</li>
+</ul>
+
+<h2>borda personalizada</h2>
+    <h3 class="borda">Borda criada num editor de imagens</h3>
+
+<h2>sombras em caixa e texto</h2>   
+    <p>Para ar uma sombra em alguma caixa, usamos a yag <strong>box-shadow</strong> e para dar uma sombra em um texto, usamos a tag <strong>text-shadow</strong>, logo após, definimos as coordenadas das sombras, tamanho, largura, expessura e cor, assim dendo</p>
+        <div class="sombrabox">Sombra em caixa</div> <br>
+    <p>Podemos usar a ferramenta devtools para auxiliar no posicionamento da sombra</p>
+    <p>box-shadow: 9px 12px 20px 1px black</p>
+    <p>altura d sombra, largura da sombra, desfoque da sombra, visualização da sombra, cor da sombra respectivamente</p>
+
+<h2>sombras em texto</h2>
+    <p class="textosombra">Texto com sombra</p>
+    <p>text-shadow:   20px -19px 5px;</p>
+    <p>altura d sombra, largura da sombra, desfoque da sombra, cor da sombra respectivamente</p>
+
+<h2>+ criando um círculo com a tag style</h2>
+    <div id="bola"></div> 
+</main>
+
+<main>
+    <h1>Mídias responsivas</h1>
+        <h2>imagens responsivas</h2>
+            <picture>
+                <source media="(max-width: 550px)" srcset="imagensresumo/p.png" type="image/png">
+
+                <source media="(max-width: 750px)" srcset="imagensresumo/m.png" type="image/png">
+
+                <img src="imagensresumo/g.png" alt="imagem teste">
+            </picture>
+
+    
+</main>
+</body>
+</html>

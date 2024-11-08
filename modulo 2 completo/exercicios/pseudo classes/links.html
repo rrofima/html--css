@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+           text-decoration: underline;
+           color: rgb(0, 17, 255); 
+        }
+         a:active {
+            color: rgb(255, 247, 0);
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            color: blue;
+        }
+        .github {
+            background-color: black;
+            color: white;
+        }
+        .youtube {
+            background-color: red;
+            color: white;
+        }
+        .steam {
+            background-color: rgb(22, 22, 135);
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank" class="github">GitHub</a></li>
+
+        <li><a href="https://www.youtube.com/" target="_blank" class="youtube">YouTube</a></li>
+
+        <li><a href=https://store.steampowered.com/ target="_blank" class="steam">Steam</a></li>
+
+    </ul>
+        <a href="index.html">página principal</a> <br>
+        <a href="links.html">links</a>
+        
+    
+</body>
+</html>

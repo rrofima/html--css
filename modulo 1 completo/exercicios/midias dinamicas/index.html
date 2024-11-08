@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head><h1>Imagens dinamicas</h1>
+<body><p>Tente abrir esse site em vários dispositivos ou aumentar ou diminuir o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexivel">
+    </picture> <hr>
+    <p>Usamos tag <q>source media type</q> para fazer com que a imagem do site se adeque seu tamanho automaticamente demtro do site, dependendo do dispositivo, usamos os tamanho da imagem em ordem crescente, do menor para o maior e de cima para baixo, exemplo </p>
+    <q>source media=(max-width: *tamanho da imagem + 50)" type srcset+"*foto selecionada*" type="imagem/png"</q> <hr>
+
+    <h1>Brincando com aúdios</h1>
+    <h2>botando música ruim para tocar nesse bagui</h2>
+    <p>Para adicionar um audio dentro de um site usamos a tag <q>audio + controls + autoplay</q></p>
+    <audio src="midia/seqso.mp3.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+     <br>
+     <p>As vezes pode acontecer de o seu navegador nao suportar o tipo de áudio inserido no codigo, como opções temos: MP3, WAV, OGG
+     <br>Nesse caso, usamos uma espécie de código preventivo para que o navegador consiga reproduzir o audio, sendo ele: <br>
+     Devemos usar a tag <q>source:src</q> dentro da tag <q>audio</q>
+     <p>
+        <q>audio</q> <br>
+        <q>source src"*audio selecionado*" type"audio/*formato do audio*"</q>
+     </p> <br>Sendo assim,temos essas opções abaixo, caso nenhuma delas funcione, o problema já é com o navegador, mas caso deseje, pode baixar o áudio mo seu dispositivo <a href="midia/seqso.mp3.mp3">música muito ruim</a><br>
+            <strong> audio> <br>
+                source src="midia/seqsmmp3" type="audio/mpeg"><br>
+                source src="midia/seqso.mp3.mp3" type="audio/wav"><br>
+                source src="midia/seqso.mp3.mp3" type="audio/ogg"><br>
+                         /audio>
+            </strong>
+            <h5>!! O site busca em forma de cascata como dele deve reproduzir o audio, d cma para baixo</h5>
+     <audio preload="metadata">
+        <source src="midia/seqso.mp3.mp3" type="audio/mpeg">
+        <source src="midia/seqso.mp3.mp3" type="audio/wav">
+        <source src="midia/seqso.mp3.mp3" type="audio/ogg">
+     </audio>
+     <p>usando a subtag <q>preload</q>, escolhemos como arquivo irá se comportar, sendo <abbr title="Baixar todas o conteúdo do áudio junto com o site">Auto,</abbr>, <abbr title="baixa apenas as informações do audio, data,nome,tamanho etc">Metadata,</abbr> <abbr title="a informação do áudio só é baixada quando o usuário clica no play do áudio">None</abbr></p>
+     <P>A subtag <q>autoplay</q> deve ser utilidada </P>
+
+     <H3>Tag loop</H3>
+     <p>Usamos a tag <q>loop</q> para deixar o áudio tocando em looping, fazendo ele tocar novamente assim que acabar</p>
+
+</html>

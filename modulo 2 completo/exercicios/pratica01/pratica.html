@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super prática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Praticando essa bomba</h1>
+    <h2>Fundo</h2>
+    <p>Para começar, colocarei um fundo em gradiente para essa bosta ficar bonita, usando a tag <strong>background-image</strong> e usando a tag <strong>background-attachment</strong> para o fundo fixar fixo na página e não ter problemas estéticos</p>
+    <h3>Para isso, vou criar um item de cada, id, class, pseudo-class, pseudo-ellement  e children</h3>
+    
+    <h1>Marcações</h1>
+    <ul>
+        <li># (id): usado para marcações individuais</li>
+        <li>. (class): usado para mais de uma marcação</li>
+        <li>: (pseudo-class): usado para interacações</li>
+        <li>:: (pseudo-ellement): usado para fazer uma adição dentro da tag classs</li>
+        <li>> (children): tem como a função de sobrepor e fazer interações</li>
+    </ul>
+
+    <h2>id #</h2>
+    <div id="1">caixa 1</div>
+    <div id="2">caixa 2</div>
+    <div id="3">caixa 3</div>
+    <p>Para faazer altecações na tag <strong>div</strong>, colocamos ela dentro de uma caixa <strong>style</strong></p>
+        <ul>
+            <li>Para deixar uma do lado da outra : display:inline-block</li>
+            <li>para mudar a cor do fundo : background-color</li>
+            <li>colocar a borda : border <q>px</q> <q>formato</q> <q>cor</q></li>
+            <li>para deixar o texto alinhado no meio da caixa : text-align center</li>
+            <li>tamanho : width </li>
+            <li>largura : height</li>
+        </ul>
+<p>tudo isso foi apenas usando a configuração da tag <strong>div</strong>, e para adiconar a função <strong>hover</strong>, criamos mais uma configuração dentro da tag <strong>style</strong> e adicionamos <q>div:hover</q>
+
+<h2>class .</h2>
+<p>O item <strong>class</strong> é bem semelhante com item <strong>id</strong>, a única diferença é que ele pode ser usado para mais de uma marcação</p>
+<div class="um">1</div>
+<div class="dois">2</div>
+<div class="tres">3</div>
+<p>Ao passar o cursor pot cima, percebemos que as cores mostradas são diferente, isso porquen usamos a indentificação <strong>class</strong>,cada uma dessas indentificações tem que ter um <q>nome</q> diferente, assim podemos alterar vários itens diferentes de formas diferentes, adicionando a subtag <strong>hover</strong> logo após o <strong>class</strong> selecionado, exemplo: <q>.um:hover</q></p>
+
+<h1>pseudo-class :</h1>
+<p class="primeiro">Coiso 1</p>
+<p class="segundo">Coiso 2</p>
+<p class="terceiro">Coiso 3</p> <br>
+<p>Ao passar o cursor por cima  e segurar, podemos perceber que que o fundo muda de cor, isso se dá pela função de uma pseudo-class, para adicionarmos uma pseudo-class, usamos <q>:active</q> dentro da configuração <strong>style</strong>, claro, adicionando o nome da classe antes de colocar esta função</p>
+
+<h1>pseudo-ellement ::</h1>
+<ul>
+    <li><a href="https://www.youtube.com/">youtube</a></li>
+    <li><a href="https://github.com/">github</a></li>
+    <li><a href="https://store.steampowered.com/">steam</a></li>
+</ul>
+<p>usamos as configurações de <strong>style</strong> dentro para adicionar os pseudo-ellements, assim usamos as opções <strong>after</strong> para adionar algo depois da classe selecionadan no caso aqui, foi a seta para a direita e adicionamos <strong>before</strong> antes da classe, no caso foi adicionado os dois pontos</p>
+<p>usamo também algo para indicar se o site foi ou não visitado, no caso é só adiconar a configuração de class <strong>:visited</strong> e mudarmos a cor do <strong>background-color</strong> para mudar a cor do fundo ou a própia <strong>color</strong> para mudar a cor da letra</p>
+
+<h1>children</h1>
+<p>encontrando o texto escondido</p>
+<div>
+    <p>achoo hihi</p>
+</div>
+<p>Para criar esta função de texto escondido, devemos usar a função <strong>></strong> , que significa sobreposição e logo as tags <strong>display:none</strong> para ocultar o termo selecionado e a função <strong>display:block</strong> para que o termo apareça apenas quando se passar o cursor por cima, isso pode ser útil em caixar de interação. Um pequeno exemplo:</p>
+<p>div> texto principal div> <br>
+    p> texto escondido p> <br>
+     <br>
+     >style <br>
+     <br>
+    div > p { <br>
+    display : none <br>
+    } <br>
+    <br>
+    div : hover > p { <br>
+    display : block <br>
+    }</p>
+
+
+</body>
+</html>

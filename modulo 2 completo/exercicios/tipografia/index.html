@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        @font-face {
+            font-family: letrinha;
+            src: url(Photograph\ Signature.ttf)
+            format(truetype);
+            font-weight: 1000;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 1em;
+          font-weight: 600;
+        }
+        h1,h2 {
+            font-family: 'letrinha';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, magni nisi error animi, autem amet totam sunt ea explicabo incidunt voluptate quisquam quis ducimus optio nihil deleniti laborum facilis cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita alias, officia ut et atque eum mollitia architecto, voluptas non quibusdam ratione, adipisci blanditiis vel perferendis cupiditate sed quia iure. </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe illo dolor deserunt iusto temporibus blanditiis maxime, rerum consequatur commodi nesciunt perferendis neque facere non beatae accusamus velit quis! Minus.</p>
+    <ul>
+        <li>Arial : fonte padrão</li>
+        <li>Courier new : fonte sem serifa e monoespaçada</li>
+        <li>Verdana : fonte sem serifa</li>
+        <li>Helvetica : fonte sem serifa</li>
+        <li>san-serif : fonte aleatória sem serifa</li>
+        <li>monospace : fonte aleatória monoespaçada</li>
+        <li>cursive : fonte em letra cursiva</li>
+    </ul>
+
+    <p>Algumas tipografias não tem disponíveis em certos dispositivos, pode ser que enquanto uns dispositivos tem, outros não pode ter, por isso o própio código sugere outros tipos de tipografia, para que, se o navegador não ser uma, ele pode procurar pela </p>
+    <br>
+    <p>Medidas absolutas do font-size </p>
+    <ul>
+        <li>cm : centímetro</li>
+        <li>mm : milímetro</li>
+        <li>in : polegada (2,54cm)</li>
+        <li>px : pixel (1 em)</li> 
+        <li>pt : ponto</li>
+        <li>pc : paica</li>
+    </ul>
+    <br>
+    <p>Medidas relativas do font-size</p>
+     <ul>
+        <li>em : medida relativa ao tamanho do M maiúsculo de uma fonte (16 pixels) (recomendada)</li>
+        <li>ex : medida relativa a altura  x de uma fonte</li>
+        <li>rem : relativa ao tamanho da fonte configurada no body do código</li>
+        <li>vw (view width) : tamanho relativo a largura da tela</li> 
+     </ul>
+     <p>O tamanho padrão é 16px</p>
+     <ul>
+        <li>font-weigth : peso, define a espessura da letra</li>
+        <ul>
+            <li>ligther : pequeno</li>
+            <li>normal : tamanho normal</li>
+            <li>bold : grande</li>
+            <li>bolder : muito grande</li>
+            <li>100-900 (da largura mínima a largura máxima)(400 padrão)</li>
+        </ul> <br>
+        <li>width : largura</li><br>
+        <li>heigth : altura</li><br>
+     </ul>
+     <br>
+     <p>Shorthand</p>
+     <ul>
+        <li>font-family : fonte da letra</li>
+        <li>font-weight : espessura da letra</li>
+        <li>font-size : tamanho da fonte</li>
+        <li>font-style : carcterística da fonte</li>
+    </ul>
+    <p>para criar uma tag com shorthand, usamos as funções das respectivas tags a cima e nessa exata ordem, assim; font: italic bolder 3em 'work Sans', sans-serif</p>
+    <h1>Fontes externas</h1>
+    <p>tag @font-face : adiciona uma fonte externa, instalada de fora</p>
+    <ul>Tipos de format
+        <li>opentype - otf</li>
+        <li>truetype - ttf</li>
+        <li>embedded-opentype</li>
+        <li>truetype (Apple Advanced Typography)</li>
+        <li>svg</li>
+    </ul>
+    <h1>Fontes copiadas de outras imagens</h1>
+    <p>podemos usar ferramentas de busca para desbobrir qual é a determinada fonte que está em uma imagem, onde uma extensão não é capaz de detectar, para isso, temos estes sites:</p>
+    <ul>
+        <li>whatfonis.com</li>
+        <li>fontsquirrel.com</li>
+        <li>myfonts.com</li>
+    </ul>
+    <a href="fonte02.html">página 2</a> <br>
+    <a href="fonte03.html">página 3</a>
+</body>
+</html>
