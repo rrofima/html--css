@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de fundo</title>
+    <style>
+        div.bloco {
+            background-image: url('imagens/wallpaper002.jpg');
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+            margin: 10px;
+        }
+
+        div#q1 {
+            background-position: left;
+        }
+
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: left bottom;
+        }
+
+        div#q4 {
+            background-position: center center;
+        }
+
+        div.quadrado1 {
+            width: 100px;
+            height: 100px;
+
+            border: 2px solid black;
+
+            display: inline-block;  
+        }
+
+        div.quadrado2 {
+            width: 100px;
+            height: 100px;
+
+            border: 2px solid black;
+
+            display: inline-block
+        }
+        
+        div.quadrado3 {
+            width: 100px;
+            height: 100px;
+
+            border: 2px solid black;
+
+            display: inline-block;  
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+    <div class="bloco" id="q4">
+
+    </div>
+
+<h2>Direção das tags</h2>
+    <div class="quadrado1">
+        left top
+    </div>
+    <div class="quadrado1">
+        center top
+    </div>
+    <div class="quadrado1">
+        rigth top
+    </div> <br>
+
+    <div class="quadrado2">
+        left center
+    </div>
+    <div class="quadrado2">
+        center center
+    </div>
+    <div class="quadrado2">
+        right center
+    </div> <br>
+
+    <div class="quadrado3">
+        lrft bottom
+    </div>
+    <div class="quadrado3">
+        center bottom
+    </div>
+    <div class="quadrado3">
+        rifth bottom
+    </div>
+</body>
+</html>
