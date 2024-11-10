@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testes</title>
+    <title>Fundo de tela fixo</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 600px;
+            max-width: 600px;
             padding: 10px;
             margin: auto; /* Serve para alinhar o item no meio*/
             border-radius: 15px;
@@ -27,12 +25,30 @@
 </head>
 <body>
     <main>
-        <h1>Propiedades background-size</h1>
-            <ul>
-                <li>background-size 100% 100% : (100vh) faz com que a imagem fique 100% exibida, mas distorce a imagem</li>
-                <li>background-size contain : faz com que a imagem de fundo seja exibida por tamanho completo, mas dependedo da viewport, pode também exibir o fundo do site</li>
-                <li>background-size cover : ele vai cobrir a tela, e caso o tamanho da vh seja alterado, ele apenas corta a imagem (recomendado)</li>
-            </ul>
-    
+        <div>
+            <h1>Propiedades background-size</h1>
+                <ul>
+                    <li>background-size 100% 100% : (100vh) faz com que a imagem fique 100% exibida, mas distorce a imagem</li>
+                    <li>background-size contain : faz com que a imagem de fundo seja exibida por tamanho completo, mas dependedo da viewport, pode também exibir o fundo do site</li>
+                    <li>background-size cover : ele vai cobrir a tela, e caso o tamanho da vh seja alterado, ele apenas corta a imagem (recomendado)</li>
+                </ul>
+
+            <h1>Propiredades background-attachment</h1>
+                <ul>
+                    <li>background-attachment: scroll : faz com que o fundo role junto com o conteudo</li>
+                    <li>background-attachment fixed : faz com que somente o conteudo role, o fundo fica fixo</li>
+                </ul>
+
+            <h1>short-hand background</h1>
+                    <p>color - image - position - repeat - [size] - attachment</p>
+                    <p>[size] -- ao aplicar a tag size numa shorthand do size, faz com que a imagem de dundo não seja carregada, portanto, ela está escrita na regra de shorthands, mas ainda não é aplicavel, a solução que temos e fazer a tag a tag separada da shothand</p>
+                    <p><strong>shorthand background correta : </strong></p>
+                    <p>background color - image - position - repeat - attachment</p>
+
+                <hr>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quibusdam, provident beatae laborum voluptate suscipit dolore blanditiis molestiae tenetur quo quia atque animi quis quasi. Vel repellat neque fugiat a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est dolores sint doloribus deserunt similique, molestias aliquid ab autem cumque? Animi, optio nobis! Qui maiores ab quasi error id sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptate iusto iure porro, impedit sequi dolore animi nam ea voluptatibus deserunt fugit amet quisquam, maiores aliquid voluptates aspernatur quibusdam ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsam necessitatibus cupiditate voluptates cumque obcaecati distinctio, nihil pariatur similique esse neque, nostrum rerum laudantium. Dignissimos excepturi nisi repudiandae adipisci doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis rem! Ea deleniti quibusdam sunt cum incidunt, ipsam dolorem harum soluta adipisci sit et temporibus nulla corrupti delectus nobis. Facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam dolor quas, illo earum quos. Laudantium quibusdam eum natus voluptates atque sequi dicta fugit consectetur, quaerat quia voluptas, nam veniam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequatur saepe commodi dolorum aut possimus quidem sint ducimus distinctio eius. Autem error nihil quidem ab odio voluptatibus! Veniam, asperiores iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus officia architecto esse ex repellat temporibus. Accusantium, laudantium itaque incidunt fuga odit quos atque necessitatibus consectetur, totam non cum dolore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni velit delectus sapiente deleniti soluta. Dolorum earum illum distinctio corporis fugiat obcaecati ab fugit totam necessitatibus, sit, eveniet quidem sint incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aspernatur in, optio harum, veniam sapiente vero suscipit culpa, velit odit sint. Et reiciendis laboriosam illo vero quia rerum fuga distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facere earum minima assumenda doloribus dicta quos, harum numquam obcaecati provident tempora nihil sed! Beatae accusantium accusamus culpa excepturi suscipit minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, dignissimos quibusdam! Voluptatem similique ea quia repellendus, vel tenetur nihil. Nihil, cum accusantium eligendi expedita voluptas inventore quibusdam aut nesciunt fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium provident ex voluptate culpa ab assumenda facilis reiciendis necessitatibus tenetur rerum nulla a neque nesciunt non, esse tempora odit sapiente? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore nulla quam earum doloribus magni, mollitia voluptate facilis dignissimos nostrum accusantium aliquid natus, voluptatum animi, quasi excepturi quisquam provident debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea neque beatae nam ex culpa magni, quos, pariatur voluptates alias vel! Rerum consectetur debitis saepe accusantium explicabo facilis obcaecati quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et molestiae soluta dicta explicabo quam inventore nihil, alias consectetur natus facere libero saepe expedita itaque laborum cupiditate quibusdam, iusto reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quasi, laborum doloribus maiores provident nam cupiditate voluptatum est quidem fugit porro temporibus facere dignissimos ducimus ab, cumque iure laboriosam libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed tempora libero cumque? Dolore, ratione! Aliquid blanditiis maxime repellat nisi nostrum! Nobis quos excepturi labore ex, aliquam veritatis. Possimus, nam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis ratione eum, magni exercitationem quidem et numquam tempora officia consectetur debitis! Ipsa et adipisci praesentium distinctio porro dolor quaerat quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis excepturi facilis velit voluptate deleniti reprehenderit dicta aliquid debitis, ullam autem a accusamus rem! Facere perspiciatis deserunt ullam. Voluptatum, cumque itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptate molestias culpa hic at soluta ad atque eaque. Odit voluptas ducimus aperiam molestiae incidunt ea velit perferendis recusandae illo non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloribus excepturi non nisi cum amet laboriosam natus nihil enim officiis reprehenderit laborum aspernatur ipsum veniam, eligendi earum inventore dolor dolores! </label></p>
+        </div>
+    </main>
 </body>
 </html>
