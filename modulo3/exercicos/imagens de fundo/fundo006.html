@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            width: 600px;
+            padding: 10px;
+            margin: auto; /* Serve para alinhar o item no meio*/
+            border-radius: 15px;
+            border: 2px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Propiedades background-size</h1>
+            <ul>
+                <li>background-size 100% 100% : (100vh) faz com que a imagem fique 100% exibida, mas distorce a imagem</li>
+                <li>background-size contain : faz com que a imagem de fundo seja exibida por tamanho completo, mas dependedo da viewport, pode também exibir o fundo do site</li>
+                <li>background-size cover : ele vai cobrir a tela, e caso o tamanho da vh seja alterado, ele apenas corta a imagem (recomendado)</li>
+            </ul>
+    
+</body>
+</html>
