@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento centralizado</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /* faz com que a imagem seja exibida inteira*/
+           
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+            margin: auto; /* centraliza o conteudo*/
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+     
+        <ul>
+            <li> margin auto : alinha o conteúdo somente na vertical</li>
+        </ul>
+    
+    <p>== o id:container, ou seja, a seção do conteudo tem que estar em <strong>position: relative</strong>, que já é o padrão de todo o html</p>
+    <p>== o id:conteudo, ou seja, o conteúdo em sim, deve estar em <strong>position: absolute</strong></p>
+        <ul> ao ter essas duas tags em função, podemos usar outras duas tags dentro do estilo do conteudo, que é <strong>left</strong> e <strong>top</strong>
+
+            <li>left : ditância entre a borda superior esquerda do conteudo, até o final do container</li>
+            <li>top : distância entre a borda superior esquerda do conteúdo, até o topo do container</li>
+        </ul>
+
+        <h1>OU seja:</h1>
+            <p>Para deixar um conteúdo alinhado ao centro, primeiramente usamos a tag <strong>position: absolute</strong> dentro da caixa de estilo do conteudo, logo adicionamos a tag <strong>left</strong> e <strong>top</strong>, e em seguida damos as cordenadas, no caso, para deixar exatamente ao centro, usamos <strong>left: 50%;</strong> e <strong>top: 50%;</strong>,para fazer comque o conteúdo se alinhe com o meio do fundo, logo adicionamos a tag <strong>transform: translate (-50%, -50%)</strong>, assim sendo</p>
+               <p>positon: absolute; <br>
+                  left: 50%; <br>
+                  top: 50%;  <br>
+                  transform: translate (-50%, -50%)</p>
+                   
+
+</body>
+</html>
