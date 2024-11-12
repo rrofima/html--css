@@ -20,7 +20,7 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgb(95, 95, 95);
+            background-color: rgb(105, 105, 105);
         }
 
         td, th {
@@ -28,8 +28,16 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(odd) /*Efeito zembrado na lista*/
+        /* odd = impar //even = par*/{
+            background-color: rgb(255, 3, 3);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(255, 142, 142);
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(165, 165, 165);
             color: white;
         }
 
@@ -48,8 +56,8 @@
 
         <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th style="width: 100px">População 2020</th>
+                    <th scope="col">Estado</th>
+                    <th style="width: 100px" scope="col">População 2020</th>
                 </tr>
         </thead>
 
@@ -194,7 +202,7 @@
 
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td><strong>206 700 700</strong></td>
                 </tr>
             </tfoot>
