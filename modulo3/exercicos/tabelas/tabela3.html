@@ -14,13 +14,14 @@
         table {
             width: 500px;
             border-collapse: collapse; /*junção de linhas verticais da tabela*/
+            position: relative /* Usado para manter o cabeçalho da tabela no topo mesmo rolando a viewport */
         }
 
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgb(105, 105, 105);
+            background-color: rgb(115, 115, 115);
         }
 
         td, th {
@@ -34,6 +35,13 @@
         }
         tbody > tr:nth-child(even) {
             background-color: rgb(255, 142, 142);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(171, 171, 171);
+            
         }
 
         thead, tfoot {
