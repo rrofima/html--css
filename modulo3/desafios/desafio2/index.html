@@ -8,6 +8,7 @@
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
+        
     }
 
     table {
@@ -19,26 +20,92 @@
         padding: 15px;
     }
 
+    .titulo {
+        text-align: left;
+        background-color: rgb(122, 122, 122);
+        padding: 8px;
+        color: white;
+    }
+
+    #uno {
+        text-align: left;
+        background-color: rgb(122, 122, 122);
+        padding: 8px;
+        color: white;
+    }
+
+    #dulo {
+        text-align: left;
+        background-color: rgb(122, 122, 122);
+        padding: 8px;
+        color: white;
+    }
+
+    #row {
+       background-color: rgb(122, 122, 122);
+       color: white;
+    }
+
 
 </style>
 <body>
     <table>
-        <caption>
-            Notas
-        </caption>
+        <thead>
+            <tr class="titulo">
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Diciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+
+            <tr id="row">
+                <td>notas 1</td>
+                <td>notas </td>
+            </tr>
+        </thead>
 
         <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th rowspan="2">Notas</th>
-            <th>Média</th>
-        </tr>
-        <tr>
-            <th>Exatas</th>
+            <th rowspan="4">Exatas</th>
             <td>Matemática</td>
             <td>0,0</td>
             <td>0,0</td>
             <td>0,0</td>
+        </tr>
+
+        <tr>
+            <td>Física</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+        </tr>
+
+        <tr>
+            <td>Química</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+        </tr>
+
+        <tr>
+            <td>Física</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+        </tr>
+
+        <tr>
+            <th colspan="5" id="uno">Média de exatas</th>
+        </tr>
+
+        <tr>
+            <th>Humanas</th>
+            <td>0,0 </td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+        </tr>
+        <tr>
+            <th colspan="5" id="dulo">Média de Humanas</th>
         </tr>
     </table>
     
