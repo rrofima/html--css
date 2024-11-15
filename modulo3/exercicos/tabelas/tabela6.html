@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        .cnome {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .csexo {
+            background-color: yellow;
+        }
+
+        .cidade {
+            background-color: green;
+        }
+
+        .cprofissao {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas</h1>
+        <p>Podemos usar a tag <strong>span</strong> dentro do <strong>colgroup</strong> para configurar várias tabrlas de uma só vez</p>
+    <table>
+
+        <colgroup> <!-- Usado para configurar colunas -->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+         <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+         </tr>
+
+         <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+         </tr>
+
+         <tr>
+            <td>João Mauricio</td>
+            <td>Masculino</td>
+            <td>67</td>
+            <td>Gari</td>
+         </tr>
+
+         <tr>
+            <td>Leôncio Belgo</td>
+            <td>Não-binário</td>
+            <td>31</td>
+            <td>Desempregado</td>
+         </tr>
+
+         <tr>
+            <td>Joana Limamei</td>
+            <td>Transexual</td>
+            <td>19y</td>
+            <td>TikToker</td>
+         </tr>
+
+         <tr>
+            <td>Orlando de Mendonça</td>
+            <td>Homem</td>
+            <td>58</td>
+            <td>Garimpeiro</td>
+         </tr>
+
+         <tr>
+            <td>Belle Belinha</td>
+            <td>slakkkkkkj</td>
+            <td>21</td>
+            <td>Web-Jober</td>
+         </tr>
+    </table>
+    
+</body>
+</html>
