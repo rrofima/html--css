@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+        iframe#frame2 {
+            width: 95vw;
+            height: 250px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum repellendus, non molestias esse dicta doloribus atque perferendis dolorum fuga mollitia ea reiciendis ad adipisci. Error magni voluptates odio exercitationem doloremque!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae distinctio laborum odio recusandae. Alias aperiam provident dolor corrupti omnis maxime, blanditiis facilis, sapiente, labore eligendi ipsa libero. Doloribus, non harum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ratione laudantium aspernatur beatae dolor ab accusantium blanditiis sequi ad eius sed explicabo quas, veritatis animi, deleniti itaque aperiam assumenda 
+
+        <iframe frameborder="1" id="tela" name="frame" srcdoc=" TESTE ">
+
+        </iframe>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos molestiae ipsam iste illum perferendis praesentium molesti
+<hr>
+
+<h1>tag <strong>name</strong></h1>
+    <p>deve ser usada da seguinte forma</p>
+        <ul>
+            <li>name=" " : usada para dar nome à um item</li>
+            <li>target="(nome do item)" : usada para direcionar algo para o item nomeado</li>
+        </ul>
+
+    <p>Toda vez que a página é carregada, o iframe fica em branco, isso pode ser corrigido na sub-tag <strong>src</strong>, escolhendo uns dos itens como tela principal do iframe</p>
+    <p>Ou podemos apagar a tag <strong>src</strong> e colocar a tag <strong>srcdoc</strong> nu lugar. Com essa função, podemos adiconar um HTML dentro do iframe</p>
+    
+</body>
+</html>
