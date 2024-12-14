@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia delectus cupiditate commodi quo praesentium sequi distinctio iure sed, accusantium dolorum aspernatur nulla at dolor repellat modi iusto nemo hic quas!</p>
+
+    <iframe src="paginas-extras/pagina04.html" frameborder="1" sandbox="sandbox">
+        seu navegador não é compatível com isso...
+    </iframe>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, quod hic esse illum consequatur optio ipsa iste earum culpa sit, dolorum minima ad molestiae, enim distinctio ut illo! Dolores, molestias!</p>
+
+    <hr>
+
+    <ul><strong>Confifurações de segurança</strong></ul>
+        <li>sandbox="sandbox" : bloqueia todo acesso externo de um iframe, e sendo a "configuração máxima"</li>
+        <li>referrerpolicy="no-referrer" : bloqueia toda a coleta de dados de um usuários</li>
+        <li>sandbox="allow-same-origin" : Limita o iframes apenas a conteúdos que estao dentro do mesmo servidor</li>
+        <li>allow-forms : permite o uso ed formulários dentro de um iframes</li>
+        <li>allow-script : permite scripts</li>
+    </ul>
+
+
+    
+</body>
+</html>
